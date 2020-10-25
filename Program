@@ -1,0 +1,236 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RandShip
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Niffty1, Angel2, Husk3, Alastor4, Charlie5, Vaggie6, Arakniss7, Vox8, Crymini9, Kattie10, Lilith11, Lucifer12,
+            //Molly13, Pentious14,
+            //Tom15, Travis16, Cherri17, Egg18, Val19;
+            //Blitzo20, Moxxie21, Millie22, Loona23, Stolas24, Octavia25, Stolas Wife26, Eddie27;
+
+            int xxxx, yyyy, reg;
+
+            Console.WriteLine("Выберите режим: 1 - Все подряд(и ХБ и ХХ), 2 - Только ХХ, 3 - Только ХБ");
+            reg = Convert.ToInt32(Console.ReadLine());
+
+
+        peremeshka:
+
+            xxxx = 0;
+            yyyy = 0;
+
+            if (reg == 2)
+            {
+                Random ship1 = new Random();
+                xxxx = ship1.Next(1, 18);
+                Random ship2 = new Random();
+                yyyy = ship2.Next(1, 18);
+            }
+
+            if (reg == 1)
+            {
+                Random ship1 = new Random();
+                xxxx = ship1.Next(1, 27);
+                Random ship2 = new Random();
+                yyyy = ship2.Next(1, 27);
+            }
+
+            if (reg == 3)
+            {
+                Random ship1 = new Random();
+                xxxx = ship1.Next(20, 27);
+                Random ship2 = new Random();
+                yyyy = ship2.Next(20, 27);
+            }
+
+            Console.WriteLine(" Ваш шип: ");
+
+            switch (xxxx)
+            {
+                case 1:
+                    Console.Write("Ниффти +");
+                    break;
+                case 2:
+                    Console.Write("Энджел +");
+                    break;
+                case 3:
+                    Console.Write("Хаск +");
+                    break;
+                case 4:
+                    Console.Write("Аластор +");
+                    break;
+                case 5:
+                    Console.Write("Чарли +");
+                    break;
+                case 6:
+                    Console.Write("Вэгги +");
+                    break;
+                case 7:
+                    Console.Write("Аракнисс +");
+                    break;
+                case 8:
+                    Console.Write("Вокс +");
+                    break;
+                case 9:
+                    Console.Write("Краймин +");
+                    break;
+                case 10:
+                    Console.Write("Кэтти +");
+                    break;
+                case 11:
+                    Console.Write("Лилит +");
+                    break;
+                case 12:
+                    Console.Write("Люцифер +");
+                    break;
+                case 13:
+                    Console.Write("Молли +");
+                    break;
+                case 14:
+                    Console.Write("Пентиус +");
+                    break;
+                case 15:
+                    Console.Write("Том +");
+                    break;
+                case 16:
+                    Console.Write("Трэвис +");
+                    break;
+                case 17:
+                    Console.Write("Черри +");
+                    break;
+                case 18:
+                    Console.Write("Яйцо +");
+                    break;
+                case 19:
+                    Console.Write("Валя +");
+                    break;
+                case 20:
+                    Console.Write("Блитцо +");
+                    break;
+                case 21:
+                    Console.Write("Мокси +");
+                    break;
+                case 22:
+                    Console.Write("Милли +");
+                    break;
+                case 23:
+                    Console.Write("Луна +");
+                    break;
+                case 24:
+                    Console.Write("Столас +");
+                    break;
+                case 25:
+                    Console.Write("Октавия +");
+                    break;
+                case 26:
+                    Console.Write("Жена Столаса +");
+                    break;
+                case 27:
+                    Console.Write("Эдди +");
+                    break;
+            }
+
+            switch (yyyy)
+            {
+                case 1:
+                    Console.Write(" Ниффти");
+                    break;
+                case 2:
+                    Console.Write(" Энджел");
+                    break;
+                case 3:
+                    Console.Write(" Хаск");
+                    break;
+                case 4:
+                    Console.Write(" Аластор");
+                    break;
+                case 5:
+                    Console.Write(" Чарли");
+                    break;
+                case 6:
+                    Console.Write(" Вэгги");
+                    break;
+                case 7:
+                    Console.Write(" Аракнисс");
+                    break;
+                case 8:
+                    Console.Write(" Вокс");
+                    break;
+                case 9:
+                    Console.Write(" Краймин");
+                    break;
+                case 10:
+                    Console.Write(" Кэтти");
+                    break;
+                case 11:
+                    Console.Write(" Лилит");
+                    break;
+                case 12:
+                    Console.Write(" Люцифер");
+                    break;
+                case 13:
+                    Console.Write(" Молли");
+                    break;
+                case 14:
+                    Console.Write(" Пентиус");
+                    break;
+                case 15:
+                    Console.Write(" Том");
+                    break;
+                case 16:
+                    Console.Write(" Трэвис");
+                    break;
+                case 17:
+                    Console.Write(" Черри");
+                    break;
+                case 18:
+                    Console.Write(" Яйцо");
+                    break;
+                case 19:
+                    Console.Write(" Валя");
+                    break;
+                case 20:
+                    Console.Write(" Блитцо");
+                    break;
+                case 21:
+                    Console.Write(" Мокси");
+                    break;
+                case 22:
+                    Console.Write(" Милли");
+                    break;
+                case 23:
+                    Console.Write(" Луна");
+                    break;
+                case 24:
+                    Console.Write(" Столас");
+                    break;
+                case 25:
+                    Console.Write(" Октавия");
+                    break;
+                case 26:
+                    Console.Write(" Жена Столаса");
+                    break;
+                case 27:
+                    Console.Write(" Эдди");
+                    break;
+            }
+
+            if (xxxx == yyyy)
+            {
+                Console.WriteLine(" Уупссс Два одинаковых чела) " +
+                    "Мешаем все по новой!");
+
+                goto peremeshka;
+            }
+            Console.WriteLine("  - Для выхода нажмите любую клавишу!");
+            Console.ReadKey();
+        }
+    }
+}
